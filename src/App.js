@@ -8,18 +8,12 @@ class App extends React.Component{
   constructor(){
     super()
     this.state={
-      tempSearchTerm : '',
       searchTerm : ''
     }
   }
   handleSearchTerm = event => {
     this.setState({
-      tempSearchTerm : event.target.value
-    })
-  }
-  handleSearch = () => {
-    this.setState({
-      searchTerm : this.state.tempSearchTerm
+      searchTerm : event.target.value
     })
   }
   render(){
@@ -28,7 +22,7 @@ class App extends React.Component{
           <div className="columns is-centered" style={{padding:'20px'}}>
             <div className="column is-half">
               <Header></Header>
-              <Search handleSearch={this.handleSearch} handleSearchTerm={this.handleSearchTerm}></Search>
+              <Search handleSearchTerm={this.handleSearchTerm}></Search>
               <Movies search={this.state.searchTerm}></Movies>
               <Footer></Footer>
             </div>
