@@ -11,10 +11,10 @@
 - [x] Load Movies from API
 - [x] Index Layout
 - [x] Search Movies
-- [] Layout For Detail Movie
-- [] Movies Pagination
-- [] Image optimized
-- [] Sorting Movies
+- [ ] Layout For Detail Movie
+- [ ] Movies Pagination
+- [ ] Image optimized
+- [ ] Sorting Movies
 
 ### Credits
 Copyright &copy; 2019 - [Agus Fikri Suyuthi](https://fikri.js.org) for Learning purpose.
