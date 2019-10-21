@@ -20,7 +20,7 @@ class App extends React.Component{
     return (
       <div className="container">
           <div className="columns is-centered" style={{padding:'20px'}}>
-            <div className="column is-half">
+            <div className="column is-two-thirds">
               <Header></Header>
               <Search handleSearchTerm={this.handleSearchTerm}></Search>
               <Movies search={this.state.searchTerm}></Movies>
