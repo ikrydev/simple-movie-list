@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Search from './components/Search'
+import Movies from './components/Movies'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(){
+    super()
+    this.state={
+      tempSearchTerm : '',
+      searchTerm : ''
+    }
+  }
+  handleSearchTerm = event => {
+    this.setState({
+      tempSearchTerm : event.target.value
+    })
+  }
+  handleSearch = () => {
+    this.setState({
+      searchTerm : this.state.tempSearchTerm
+    })
+  }
+  render(){
+    return (
+      <div className="container">
+          <div className="columns is-centered" style={{padding:'20px'}}>
+            <div className="column is-half">
+              <Header></Header>
+              <Search handleSearch={this.handleSearch} handleSearchTerm={this.handleSearchTerm}></Search>
+              <Movies search={this.state.searchTerm}></Movies>
+              <Footer></Footer>
+            </div>
+          </div>
+      </div>
+    )
+  }
 }
 
 export default App;
