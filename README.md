@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6951f381-57fe-41c9-84ad-e9dd4b6d33f5/deploy-status)](https://app.netlify.com/sites/simple-movie-list/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
