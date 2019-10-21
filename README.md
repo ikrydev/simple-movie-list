@@ -8,9 +8,9 @@
 - [NodeJS](https://nodejs.org/en/download/)
 
 ### Ongoing Features
-- [x] Load Movies from API
 - [x] Index Layout
 - [x] Search Movies
+- [ ] Load Movies from API
 - [ ] Layout For Detail Movie
 - [ ] Movies Pagination
 - [ ] Image optimized
